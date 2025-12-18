@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>축구 전술 보드</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- 시작 화면 -->
+<div id="startScreen">
+  <h2>⚽ 축구 전술 보드</h2>
+  <button id="startBtn">▶ 시작하기</button>
+</div>
+
+<!-- 전술판 화면 -->
+<div id="fieldScreen" class="hidden">
+  <div id="controls">
+    <button id="resetBtn">🔄 리셋</button>
+    <button id="saveBtn">💾 저장</button>
+    <button id="loadBtn">📂 불러오기</button> <!-- 불러오기 버튼 추가 -->
+    <button id="formation433">4-3-3</button>
+    <button id="formation4231">4-2-3-1</button>
+    <button id="formation442">4-4-2</button>
+    <button id="formation352">3-5-2</button>
+    <button id="formation532">5-3-2</button>
+    <button id="formation451">4-5-1</button>
+  </div>
+
+  <div id="field">
+
+    <!-- 하프라인 & 센터서클 -->
+    <div id="half-line"></div>
+    <div id="center-circle"></div>
+
+    <!-- 골대 -->
+    <div class="goal top-goal"></div>
+    <div class="goal bottom-goal"></div>
+
+    <!-- 공 -->
+    <div id="ball">⚽</div>
+
+    <!-- 🔴 우리팀 (아래 진영) -->
+    <div class="player teamA" data-init="85,45">GK</div>
+    <div class="player teamA" data-init="70,15">DF</div>
+    <div class="player teamA" data-init="70,35">DF</div>
+    <div class="player teamA" data-init="70,55">DF</div>
+    <div class="player teamA" data-init="70,75">DF</div>
+    <div class="player teamA" data-init="50,30">MF</div>
+    <div class="player teamA" data-init="50,45">MF</div>
+    <div class="player teamA" data-init="50,60">MF</div>
+    <div class="player teamA" data-init="30,25">FW</div>
+    <div class="player teamA" data-init="30,45">FW</div>
+    <div class="player teamA" data-init="30,65">FW</div>
+
+    <!-- 🔵 상대팀 (위 진영) -->
+    <div class="player teamB" data-init="15,45">GK</div>
+    <div class="player teamB" data-init="30,15">DF</div>
+    <div class="player teamB" data-init="30,35">DF</div>
+    <div class="player teamB" data-init="30,55">DF</div>
+    <div class="player teamB" data-init="30,75">DF</div>
+    <div class="player teamB" data-init="50,30">MF</div>
+    <div class="player teamB" data-init="50,45">MF</div>
+    <div class="player teamB" data-init="50,60">MF</div>
+    <div class="player teamB" data-init="70,25">FW</div>
+    <div class="player teamB" data-init="70,45">FW</div>
+    <div class="player teamB" data-init="70,65">FW</div>
+
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
